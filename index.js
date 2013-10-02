@@ -1,7 +1,7 @@
 var express = require('express'),
 	cons = require('consolidate'),
 	Cashbox = require('cashbox'),
-	extend = require('deap/shallow'),
+	deap = require('deap'),
 	app = express();
 
 // assign the swig engine to .html files
@@ -12,7 +12,7 @@ app.set('view engine', 'dust');
 app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 
-var config = extend(
+var config = deap(
 	require('./config'),
 	require('./keys')
 );
