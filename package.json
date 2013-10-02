@@ -1,0 +1,22 @@
+{
+  "name": "bradharris.io",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "supervisor -n -w -i node_modules index.js"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~3.4.0",
+    "consolidate": "~0.9.1",
+    "dustjs-linkedin": "~2.0.3",
+    "github": "~0.1.10",
+    "async": "~0.2.9",
+    "cashbox": "~0.3.0",
+    "deap": "~0.2.0",
+    "tumblr.js": "0.0.4",
+    "moment": "~2.2.1"
+  }
+}

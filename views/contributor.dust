@@ -1,0 +1,19 @@
+<div class="col-md-4 code-projects">
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4><i class="icon-code-fork icon-large"></i> Projects I contribute to <span class="badge pull-right">{contributor.length}</span></h4>
+		</div>
+
+		<ul>
+			{#contributor}
+				<li>
+					<a href="{url}">{name}</a>
+					<span class="label label-{language|lc} pull-right">{language|lc}</span>
+					<p>{description}</p>
+				</li>
+			{/contributor}
+		</ul>
+	</div>
+
+</div>

@@ -1,0 +1,20 @@
+<div class="row fitbit">
+
+	<a href="http://www.fitbit.com/user/26XRH3" target="_blank">
+		<img src="/images/fitbit-100-blk-transparent.png" width="50" class="logo pull-left">
+	</a>
+
+	<div class="progress">
+		<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{fitbit.steps.progress}" aria-valuemin="0" aria-valuemax="100" style="width: {fitbit.steps.progress}%">
+			<span class="sr-only">steps: {fitbit.steps.current} / {fitbit.steps.goal}</span>
+		</div>
+		<div class="stats">steps: {fitbit.steps.current} / {fitbit.steps.goal}</div>
+	</div>
+
+	<div class="progress">
+		<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="{fitbit.floors.progress}" aria-valuemin="0" aria-valuemax="100" style="width: {fitbit.floors.progress}%">
+			<span class="sr-only">floors: {fitbit.floors.current} / {fitbit.floors.goal}</span>
+		</div>
+		<div class="stats">floors: {fitbit.floors.current} <span>/</span> {fitbit.floors.goal}</div>
+	</div>
+</div>

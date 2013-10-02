@@ -1,0 +1,20 @@
+<div class="col-md-4 code-projects">
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4><i class="icon-github-sign icon-large"></i> My Projects <span class="badge pull-right">{repos.length}</span></h4>
+		</div>
+
+		<ul>
+			{#repos}
+				<li>
+					<a href="{html_url}">{name}</a>
+					<span class="label label-{language|lc} pull-right">{language|lc}</span>
+					<p>{description}</p>
+					<small class="date">last updated {pushed_at|fromNow}</small>
+				</li>
+			{/repos}
+		</ul>
+	</div>
+
+</div>
