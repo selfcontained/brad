@@ -32,7 +32,8 @@
 				<li>
 					<small class="date pull-right">{date|fromNow}</small>
 					<a href="{short_url}"><strong>{title}</strong></a>
-					<p>{body}</p>
+					{?body}<p>{body|s}</p>{/body}
+					{?text}<p>{text|s}</p>{/text}
 				</li>
 			{/posts.lolharriskids}
 		</ul>
