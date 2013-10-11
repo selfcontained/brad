@@ -7,7 +7,7 @@
 
 		<div class="panel-heading blog-name selfcontained">
 			<h4>
-				<i class="icon-code icon-3x pull-right icon-muted"></i>
+				<i class="icon-code icon-3x pull-right icon-muted hidden-md hidden-xs"></i>
 				<img src="http://selfcontained.us/images/selfcontained.png" width="48">
 				<a href="http://selfcontained.us">selfcontained.us</a>
 			</h4>
@@ -24,7 +24,7 @@
 
 		<div class="panel-heading blog-name lolharriskids">
 			<h4>
-				<i class="icon-smile icon-3x pull-right icon-muted"></i>
+				<i class="icon-smile icon-3x pull-right icon-muted hidden-md hidden-xs"></i>
 				<img src="http://25.media.tumblr.com/avatar_69a22e7c2275_48.png">
 				<a href="http://lolharriskids.tumblr.com">lolharriskids.tumblr.com</a>
 			</h4>
@@ -45,7 +45,7 @@
 
 		<div class="panel-heading blog-name drizztquotes">
 			<h4>
-				<i class="icon-quote-right icon-3x pull-right icon-muted"></i>
+				<i class="icon-quote-right icon-3x pull-right icon-muted hidden-md hidden-xs"></i>
 				<img src="http://25.media.tumblr.com/avatar_e8aa0e4e0425_48.png">
 				<a href="http://drizztquotes.tumblr.com">drizztquotes.tumblr.com</a>
 			</h4>
