@@ -1,7 +1,8 @@
 module.exports = {
 
 	fitbit: {
-		ttl: '30 minutes'
+		ttl: '30 minutes',
+		historyDays: 60
 	},
 
 	tumblr: {
