@@ -80,6 +80,7 @@ footer {
 }
 .date {
 	color: #ddd;
+	margin-right: 5px;
 }
 .panel-heading.lolharriskids, .panel-heading.drizztquotes {
 	border-top: solid 1px #ddd;
