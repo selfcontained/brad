@@ -1,9 +1,10 @@
 var fitbit = require('fitbit-js'),
     deap = require('deap'),
-    moment = require('moment');
+    moment = require('moment-timezone');
 
 module.exports = function(app, config) {
-    var client = fitbit(config.consumerKey, config.consumerSecret);
+    var MY_TIMEZONE = 'America/Denver',
+        client = fitbit(config.consumerKey, config.consumerSecret);
 
     function getStats(date, done) {
         var path = '/user/-/activities/date/'+date+'.json',
@@ -39,7 +40,7 @@ module.exports = function(app, config) {
 
     return {
         stats: function(cb) {
-            var date = moment().format('YYYY-MM-DD'),
+            var date = moment().tz(MY_TIMEZONE).format('YYYY-MM-DD'),
                 getIt = function(key, done) {
                     getStats(date, done);
                 };

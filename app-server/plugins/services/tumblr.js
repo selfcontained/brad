@@ -1,5 +1,5 @@
 var Tumblr = require('tumblr.js'),
-    moment = require('moment'),
+    moment = require('moment-timezone'),
     async = require('async');
 
 module.exports = function(app, config) {

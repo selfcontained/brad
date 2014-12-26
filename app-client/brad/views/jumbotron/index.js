@@ -12,7 +12,6 @@ module.exports = View.extend({
         fitbit: {
             container: '.fitbit-container',
             prepareView: function(el) {
-                console.log('jumbotron: ', this.fitbit);
                 return new FitbitView({
                     el: el,
                     model: this.fitbit

@@ -1,5 +1,5 @@
 var Github = require('github'),
-    moment = require('moment');
+    moment = require('moment-timezone');
 
 module.exports = function(app, config) {
     var github = new Github({
