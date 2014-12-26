@@ -51,6 +51,7 @@
   },
   "subdomain": "selfcontained-brad",
   "domains": [
-    "brad.selfcontained.us"
+    "brad.selfcontained.us",
+    "resume.selfcontained.us"
   ]
 }
