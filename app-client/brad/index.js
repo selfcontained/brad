@@ -4,7 +4,9 @@ var MainView = require('./views/main/'),
     FitbitStats = require('./models/fitbit-stats');
 
 module.exports = function(config) {
-    var app = {};
+    var app = {
+        config: config
+    };
 
     app.view = new MainView({
         el: document.body,
@@ -13,4 +15,5 @@ module.exports = function(config) {
         fitbit: new FitbitStats(config.fitbit)
     });
 
+    return app;
 };

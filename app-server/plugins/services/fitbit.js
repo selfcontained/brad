@@ -12,8 +12,8 @@ module.exports = function(app, config) {
             });
 
         client.apiCall('GET', path, params, function(err, resp, body) {
-            console.log('fitbit err: ', err);
             if(err) {
+                console.log('fitbit err: ', err);
                 return done(err.toString());
             }
 

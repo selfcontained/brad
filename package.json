@@ -1,6 +1,6 @@
 {
   "name": "brad.selfcontained.us",
-  "version": "0.1.2",
+  "version": "0.1.3-0",
   "description": "a site for brad to play with",
   "main": "index.js",
   "scripts": {

@@ -24,7 +24,7 @@ html(lang="en")
 
         script(src=url('js/brad.js'))
         script.
-            require('brad')({
+            window.app = require('brad')({
                 fitbit: !{JSON.stringify(fitbit)},
                 repos: !{JSON.stringify(repos)},
                 blogs: !{JSON.stringify(blogs)}
