@@ -5,9 +5,16 @@ module.exports = {
         views: {
             cache: true
         },
+        cache: {
+            store: 'redis',
+            host: process.env.REDIS_HOST,
+            options: {
+                auth_pass: process.env.REDIS_PASSWORD
+            }
+        },
         logging: {
-            http: 'default',
-            colorize: false,
+            http: 'dev',
+            colorize: true,
             timestamp: true,
             loggers: {
                 debug: 'rainbow',
@@ -64,7 +71,6 @@ module.exports = {
             dynamic: true
         },
         logging: {
-            http: 'dev',
             colorize: true
         }
     }
