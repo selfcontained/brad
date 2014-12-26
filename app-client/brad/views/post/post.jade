@@ -1,0 +1,10 @@
+li
+    span.pull-right
+        small.date #{model.date}
+        a(href=model.url)
+            i.icon-tumblr-sign
+    if(model.title)
+        a(href=model.url)
+            strong #{model.title}
+    if(model.body)
+        p !{model.body}

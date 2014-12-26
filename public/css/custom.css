@@ -7,16 +7,12 @@ body {
 }
 
 .jumbotron {
-	/*background-color: #999;*/
 	padding-bottom: 10px;
 	padding-top: 25px;
 }
 
 .fitbit {
 	padding-top: 10px;
-}
-.fitbit img.logo {
-	/*margin-right: 10px;*/
 }
 
 .fitbit .progress {
@@ -39,6 +35,10 @@ footer {
 	padding: 0px 25px;
 }
 
+footer a:hover {
+	text-decoration:none;
+}
+
 .code-projects ul {
 	padding: 0px;
 }
@@ -52,6 +52,10 @@ footer {
 
 .code-projects h4 {
 	margin: 0px;
+}
+
+.code-projects .icon-align-justify {
+	margin-right: 5px;
 }
 
 .label-javascript {
@@ -74,6 +78,8 @@ footer {
 	background-color: #1f085e;
 }
 
+
+
 .blog-name img {
 	margin-right: 5px;
 	border: solid 1px #ddd;
@@ -82,7 +88,12 @@ footer {
 	color: #ddd;
 	margin-right: 5px;
 }
-.panel-heading.lolharriskids, .panel-heading.drizztquotes {
+.panel-default .panel-heading {
+	color: #333;
+	background-color: #f5f5f5;
+	border-color: #ddd;
+}
+.panel-heading.drizztquotes {
 	border-top: solid 1px #ddd;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;

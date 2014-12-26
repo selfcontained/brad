@@ -1,0 +1,20 @@
+div.row.fitbit
+
+    a(href="http://www.fitbit.com/user/26XRH3" target="_blank")
+        img(src="/images/fitbit-100-blk-transparent.png" width="50" class="logo pull-left")
+
+    div.progress
+        div.progress-bar.progress-bar-success(role="progressbar" aria-valuenow=model.steps.current aria-valuemin="0" aria-valuemax=model.steps.goal style="width: #{model.steps.progress}%")
+            span.sr-only steps: #{model.steps.current} / #{model.steps.goal}
+        div.stats 
+            | steps: #{model.steps.current} 
+            span / 
+            | #{model.steps.goal}
+
+    div.progress
+        div.progress-bar.progress-bar-primary(role="progressbar" aria-valuenow=model.floors.current aria-valuemin="0" aria-valuemax=model.floors.goal style="width: #{model.floors.progress}%")
+            span.sr-only floors: #{model.floors.current} / #{model.floors.goal}
+        div.stats 
+            | floors: #{model.floors.current} 
+            span / 
+            | #{model.floors.goal}
