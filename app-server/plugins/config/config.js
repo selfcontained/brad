@@ -7,9 +7,9 @@ module.exports = {
         },
         cache: {
             store: 'redis',
-            host: process.env.REDIS_HOST,
+            host: process.env.CACHE_REDIS_HOST,
             options: {
-                auth_pass: process.env.REDIS_PASSWORD
+                auth_pass: process.env.CACHE_REDIS_PASSWORD
             }
         },
         logging: {
