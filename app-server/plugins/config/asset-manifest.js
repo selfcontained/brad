@@ -12,6 +12,7 @@ module.exports = function(app) {
         console.log('Loading asset manifest file @ %s', location);
     }catch(e){
         console.log('No asset manifest file found @ %s', location);
+        console.log(e);
     }
 
     // adjust keys to be relative paths instead of absolute
