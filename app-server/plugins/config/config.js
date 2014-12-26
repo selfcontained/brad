@@ -32,10 +32,9 @@ module.exports = {
             }
         },
         assets: {
-            root: '/',
+            root: 'http://d3jp09posjitmg.cloudfront.net/',
             dirs: ['public_dist_versioned'],
-            maxAge: 0,
-            // maxAge: 31536000000, // one year
+            maxAge: 31536000000, // one year
             versioned: true,
             debug: false,
             dynamic: false
