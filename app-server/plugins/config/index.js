@@ -11,5 +11,4 @@ module.exports = function(app) {
             .addOverride({ environment: environment });
 
     app.config = crampon.getConfig(environment);
-    console.log(app.config);
 };
