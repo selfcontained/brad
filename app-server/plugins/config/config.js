@@ -25,19 +25,27 @@ module.exports = {
             }
         },
         assets: {
-            root: 'http://d3lvc3xjxixbeb.cloudfront.net/',
+            root: '/',
             dirs: ['public_dist_versioned'],
-            maxAge: 31536000000, // one year
+            maxAge: 0,
+            // maxAge: 31536000000, // one year
             versioned: true,
             debug: false,
             dynamic: false
         },
         fitbit: {
             ttl: '30 minutes',
-            historyDays: 60
+            historyDays: 60,
+            consumerKey: process.env.FITBIT_CONSUMER_KEY,
+            consumerSecret: process.env.FITBIT_CONSUMER_SECRET,
+            token: {
+                oauth_token: process.env.FITBIT_TOKEN,
+                oauth_token_secret: process.env.FITBIT_TOKEN_SECRET
+            }
         },
         tumblr: {
-            ttl: '3 hours'
+            ttl: '3 hours',
+            key: process.env.TUMBLR_KEY
         },
         github: {
             ttl: '1 day'
